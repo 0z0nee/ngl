@@ -2,17 +2,17 @@
 
 ## [1.1] Installation
 
-Download **nc** (the ngl compiler) [here](http://ngl.neuroshok.com/concrete/nc.exe)
+Download **nc** (the ngl compiler) [here](http://ngl.neuroshok.com/concrete/nc.exe).
 
 ### [1.1.1] Configuration
 
-**nc** require some configuration for advanced use of ngl, check the [list of nc commands](compiler/commands.md) for more informations
+**nc** requires some configuration for advanced use of ngl, check the [list of nc commands](compiler/commands.md) for more information.
 
 ## [1.2] Basics
 
 **nc** can be used in two modes. The linear mode to launch commands using the ngl linear syntax or in interactive mode by running **nc** without parameters.
 
-All ecosystem elements will be handled by **nc** (build system, tests, docs, vcs, etc...)
+All ecosystem elements will be handled by **nc** (build system, tests, docs, vcs...)
 
 ### [1.2.1] Create a new project
 
@@ -22,7 +22,7 @@ All ecosystem elements will be handled by **nc** (build system, tests, docs, vcs
 ```
 hello_world/
  - concept/ // project source code
-    - program.ngl // the main file containging the entry point of the program
+    - program.ngl // the main file containing the entry point of the program
 
  - ngl.ngl // description of ngl itself
  - project.ngl // description of the project
@@ -51,7 +51,7 @@ hello_world/
     - build/
        - hello_world.exe
  - concept/ // project source code
-    - program.ngl // the main file containging the entry point of the program
+    - program.ngl // the main file containing the entry point of the program
 
  - ngl.ngl // description of ngl itself
  - project.ngl // description of the project
