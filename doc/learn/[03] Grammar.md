@@ -1,18 +1,18 @@
 # Grammar
 
-The grammar of ngl is customisable, see ngl:shape for more informations.
+The grammar of ngl is customisable, see ngl:shape for more information.
 
-There is two grammars for ngl, the native grammar, used to create the standard grammar.
+There are two grammars for ngl: the native grammar used to create the standard grammar.
 
 ## [3.1] Symbols
-- `:` : edge
-- `{}` : vector data
-- `[]` : concrete data
-- `<>` : parameterization
+- `:`: edge
+- `{}`: vector data
+- `[]`: concrete data
+- `<>`: parameterization
 
 ## [3.2] Keywords
 
-There is no keywords in ngl. As the only way to create an identifier is from another one, the root identifier will be the equivalent of a keyword. It will be created with a self description.
+There are no keywords in ngl. As the only way to create an identifier is from another one, the root identifier will be the equivalent of a keyword. It will be created with a self description.
 
 ```
 ngl ngl
@@ -36,8 +36,8 @@ ngl:shape digit
 ### [3.4.1] Expression
 #### [3.4.1.1] Description
 
-**descriptor** : existing identifier
-**described_identifier** : new identifier
+**descriptor**: existing identifier \
+**described_identifier**: new identifier
 
 ##### Self description
 
@@ -84,7 +84,7 @@ ngc:array integer_array
 }
 ```
 
-All described_identifiers in the bloc are connected to the described_identifier with an edge of type <has>
+All described_identifiers in the bloc are connected to the described_identifier with an edge of type <has>.
 
 `ngl:edge<ngl, ngc:movie, ngc:movie:name, has>`
 
@@ -95,11 +95,11 @@ All described_identifiers in the bloc are connected to the described_identifier 
 ```
 ngc zeta
 {
-    <ngl:concept> data_type // descriptor_identifier require a parameterisation of a ngl:concept
+    <ngl:concept> data_type // descriptor_identifier requires a parameterisation of a ngl:concept
     <ngl:concept> data_type ngc:integer // default parameterization
                                         // result in ngl:concept<ngc:integer>
     
-    <ngl:concrete> value // descriptor_identifier require a parameterisation of a concrete
+    <ngl:concrete> value // descriptor_identifier requires a parameterisation of a concrete
     <ngl:concrete> value [4] // default parameterization
                              // result in ngl:concrete<4>    
 }
@@ -143,7 +143,7 @@ ngc:project:project_zeta<config: release>
 
 ##### Meta parameterization
 
-A parameterized description can use partially parameterized identifiers
+A parameterized description can use partially parameterized identifiers.
 
 ```
 ngc array
@@ -171,7 +171,7 @@ ngc:resizer<ngc:array<ngc:integer>>
 
 ```
 
-Append datas for the specified values to the parameterized_descriptor
+Append data for the specified values to the parameterized_descriptor.
 
 ##### Concept shape
 
@@ -185,8 +185,8 @@ ngc zeta
 ##### Difference between descriptor and identifier parameterization
 
 ```
-<ngl:concept> data_type [ngc:integer] // (1) expect a concept, concrete interpreted as a concept
-ngl:concept <data_type> [4] // (2) expect a concrete
+<ngl:concept> data_type [ngc:integer] // (1) expects a concept, concrete interpreted as a concept
+ngl:concept <data_type> [4] // (2) expects a concrete
 
 (1) array<ngc:number> [ngc:integer ngc:real ngc:complex]
 (2) array<ngc:number> [1 2 3]
