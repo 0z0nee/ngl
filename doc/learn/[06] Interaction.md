@@ -2,7 +2,7 @@
 
 ## [6.1] Edge
 
-An edge is a link between two ngl:data. It's used to create a logic between datas (interactions, constraints, aliases, imports etc ...)
+An edge is a link between two ngl:data. It's used to create a logic between data (interactions, constraints, aliases, imports...)
 
 ```
 ngl:edge<ngl, ngl:concept, ngc, nge:alias> // low level
@@ -15,7 +15,7 @@ ngl:alias<ngl:concept, ngc> // user level
 
 ## [6.3] I/O
 
-I/O is represented by read/write operations on a ngl:storage 
+I/O is represented by read/write operations on a ngl:storage:
 
 ```
 ngl:project program

@@ -1,8 +1,8 @@
 # Data
 
-ngl describe any information (a concrete data, an idea, an action etc...) as a ngl:data
+ngl describes any information (a concrete data, an idea, an action...) as a ngl:data.
 It is the most generic _type_. 
-In ngl we don't talk about types but concepts (ngl:data:concept), the difference is theorical and can be demonstrated like this
+In ngl, we don't talk about types but concepts (ngl:data:concept), the difference is theoretical and can be demonstrated like this:
 
 ```
 ngc:function sum
@@ -43,7 +43,7 @@ A concept is a ngl:data owned and described by a ngl:entity
     - ngc:dynamic (a function, a process, an entity)
 
 ````
-ngc:array<ngl:int> ar // incomplete parametrization
+ngc:array<ngl:int> ar // incomplete parameterization
 
 // merge concepts using an expression
 (ar & ngc:dynamic) dynamic_array
@@ -155,7 +155,7 @@ ngc <color>
 }
 
 1/description/                   ngc:color<[Red], [FF0000]> red
-2/description, syntax2 /         ngc:color<> red{ [Red], [FF0000] }
+2/description, syntax2/         ngc:color<> red{ [Red], [FF0000] }
 3/alias parameterization/        ngl:alias<red, ngc:color<[Red], [FF0000]>>
 4/alias description of concrete/ ngl:alias red ngc:color<[Red], [FF0000]>
 5/edge description of concrete/  ngl:edge<alias> red ngc:color<[Red], [FF0000]>

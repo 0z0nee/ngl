@@ -2,11 +2,11 @@
 
 ## [10.1] Phase
 
-The phase represent the program state when an entity is processing something related to the program concept
+The phase represents the program state when an entity is processing something related to the program concept.
 
-ngl:phase:build, program is in build state when the build system is processing the project concept
-ngl:phase:compile:execution, program is in compilation state when the compiler is executing a program concept code
-ngl:phase:alive:execution, program is alive when the jit is executing a program concept code
+ngl:phase:build, program is in build state when the build system is processing the project concept. \
+ngl:phase:compile:execution, program is in compilation state when the compiler is executing a program concept code. \
+ngl:phase:alive:execution, program is alive when the jit is executing a program concept code.
 
 ```
 ngl:phase build

@@ -18,7 +18,7 @@ ngl:reader<str_data, binary> // binary not found, search for ngl:reader:binary
 
 ## [8.2] Reflection
 
-ngl:meta is used to manipulate an concrete identifier as a concept  
+ngl:meta is used to manipulate a concrete identifier as a concept. 
 
 ```
 ngl meta

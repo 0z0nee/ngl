@@ -18,7 +18,7 @@ ngl:concept:movie // use movie from the ngl:cluster:concept named ncc
 
 ## [13.1.2] Entity cluster
 
-A ngl:cluster<entity> is a cluster that describe an entity who can only be used by other entities. It cannot exist alone in the ngl:environment.
+A ngl:cluster<entity> is a cluster that describes an entity that can only be used by other entities. It cannot exist alone in the ngl:environment.
 
 ```ngl
 // network.ngl

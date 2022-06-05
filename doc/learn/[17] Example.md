@@ -10,7 +10,7 @@ Create a project
 // generated tree
 hello_world/
  - concept/ // project source code
-    - program.ngl // the main file containging the entry point of the program
+    - program.ngl // the main file containing the entry point of the program
 
  - ngl.ngl // description of ngl itself
  - project.ngl // description of the project

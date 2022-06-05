@@ -1,15 +1,15 @@
 # Versioning
 
-The evolution of the source code is handle through the internal representation
-of ngl source code (ngl program graph)
+The evolution of the source code is handled through the internal representation
+of ngl source code (ngl program graph).
 
 Each change of the program graph will be logged using predefined actions to make cluster
-merging possible
+merging possible.
 
 # [15.1] nvs
 
 nvs is the version system of ngl and can be controlled by nc.
-It's another entity with its own concepts, separated from ngl
+It's another entity with its own concepts, separated from ngl.
 ```
 nvs nvs
 {
@@ -20,25 +20,20 @@ nvs nvs
 }
 ```
 
-ngc:serialize<ngc:movie>
-{
-
-}
-
 # [15.2] Program graph evolution
 
 ### Concepts
-- add : add an edge
-- del : delete an edge
-- edit :
-    - refactor : identifier changed
-    - reorder : edge order changed
+- add: adds an edge
+- del: deletes an edge
+- edit:
+    - refactor: identifier changed
+    - reorder: edge order changed
 - add_parameterization
 - del_parameterization
 
 Some concepts can be merged, for example (add & parameterization) 
 
-Updating a concept : 
+Updating a concept: 
 `nc update ngc::movie`
 
 Autodetect the evolution type of the concept and save it.
